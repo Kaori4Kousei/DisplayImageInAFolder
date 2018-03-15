@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,13 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += PageLoaded;
+        }
+        private void PageLoaded(object sender, RoutedEventArgs e)
+        {
+            string[] fileEntries = Directory.GetFiles(@"E:\Cars\");
+            foreach (string fileName in fileEntries)
+                listView.Items.Add(fileName);
         }
     }
 }
