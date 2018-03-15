@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static WpfApp1.ViewModel;
 
 namespace WpfApp1
 {
@@ -24,13 +25,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            Loaded += PageLoaded;
-        }
-        private void PageLoaded(object sender, RoutedEventArgs e)
-        {
-            string[] fileEntries = Directory.GetFiles(@"E:\Cars\");
-            foreach (string fileName in fileEntries)
-                listView.Items.Add(fileName);
         }
     }
 }
+

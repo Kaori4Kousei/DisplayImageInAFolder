@@ -13,3 +13,4 @@ E:\Repo\StylingBasics\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
 E:\Repo\StylingBasics\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 E:\Repo\StylingBasics\WpfApp1\obj\Debug\WpfApp1.exe
 E:\Repo\StylingBasics\WpfApp1\obj\Debug\WpfApp1.pdb
+E:\Repo\StylingBasics\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
