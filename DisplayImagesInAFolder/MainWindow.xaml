@@ -40,7 +40,11 @@
             <ItemsControl ItemsSource="{Binding ImagePath}" HorizontalAlignment="Center">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Image Source="{Binding ImagePathString}" Margin="4" Width="400" Height="400"/>
+                        <Image Source="{Binding ImagePathString}" Margin="4" Width="400" Height="400" RenderOptions.BitmapScalingMode="HighQuality">
+                            <Image.Effect>
+                                <DropShadowEffect ShadowDepth="6"/>
+                            </Image.Effect>
+                        </Image>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
                 <ItemsControl.ItemsPanel>
